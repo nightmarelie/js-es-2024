@@ -18,3 +18,7 @@ console.log(groupedPeople);
 const groupedPeopleWithDynamicKey = Object.groupBy(people, person => `Active: ${person.active}`);
 
 console.log(groupedPeopleWithDynamicKey);
+
+// Every iterable object has a groupBy method
+
+console.log(people[Symbol.iterator]);
