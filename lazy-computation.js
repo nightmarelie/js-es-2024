@@ -11,3 +11,6 @@ function * lazyMap(arr, mapFn) {
 const lazySquares = lazyMap(arr, i => i ** 2);
 
 console.log([...lazySquares]);
+
+// new approach
+console.log(arr.values().map(i => i ** 2));
