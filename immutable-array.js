@@ -7,3 +7,8 @@ const todos = [
 console.log(todos);
 
 console.log(todos.map(todo => todo.id === 2 ? { ...todo, completed: true } : todo));
+
+// new approach
+const index = todos.findIndex(todo => todo.id === 2);
+
+console.log(todos.with(index, { ...todos[index], completed: true }));
