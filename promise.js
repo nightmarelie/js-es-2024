@@ -3,4 +3,7 @@
 //
 // });
 
-const { promise, reject, resolve } = Promise.withResolvers ();
+// const { promise, reject, resolve } = Promise.withResolvers ();
+
+// any
+console.log(await Promise.any([Promise.resolve(111)]));
